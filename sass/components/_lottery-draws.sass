@@ -1,0 +1,109 @@
+.loterry__draws
+  h2
+    font-family: "Roboto-Medium"
+    font-size: 24px
+    line-height: 36px
+    text-transform: uppercase
+    margin-bottom: 30px
+    @include respond (tab-land)
+      font-size: 18px
+      line-height: 24px
+.lottery__badges
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 76px
+  &-inner
+    width: 380px
+    border: 1px solid #E0E0E0
+    border-radius: 8px
+    position: relative
+    @include respond (tab-land)
+      width: 343px
+      margin-bottom: 15px
+    .inner-top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 5px 39px 5px 28px
+      @include respond (tab-land)
+        margin: 5px 22px
+      .top-logo
+        width: 141px
+        height: 80px
+        border: 2px solid #E0E0E0
+        border-radius: 80%
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 25px
+        @include respond (tab-land)
+          width: 127px
+          img
+            width: 79px
+            height: 59px
+      .top-description
+        .descr-text
+          font-family: "Roboto-Medium"
+          font-size: 14px
+          line-height: 120%
+          text-transform: uppercase
+          margin-bottom: 5px
+          position: relative
+          padding-left: 34px
+          @include respond (tab-land)
+            font-size: 12px
+          &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            width: 20px
+            height: 14px
+            background-image: url("./../icons/country.svg")
+        .descr-number
+          font-family: "Roboto-Bold"
+          font-size: 25px
+          line-height: 22px
+          color: $color-green
+          @include respond (tab-land)
+            font-size: 22px
+    .inner-bottom
+      display: flex
+      justify-content: space-between
+      align-items: center
+      background-color: $color-blue
+      border-radius: 0 0 8px 8px
+      .bottom-btn
+        width: 171px
+        height: 36px
+        border-radius: 8px
+        background-color: $btn-bgc-yellow
+        display: flex
+        align-items: center
+        justify-content: center
+        font-family: "Roboto-Medium"
+        font-size: 16px
+        line-height: 24px
+        margin: 13px 15px 10px 12px
+        @include respond (tab-land)
+          width: 144px
+          height: 34px
+        a
+          color: $color-black
+      .bottom-timer
+        font-family: "Roboto-Medium"
+        font-size: 18px
+        line-height: 18px
+        color: $color-white
+        position: relative
+        padding-left: 25px
+        margin-right: 72px
+        &::before
+          content: ""
+          position: absolute
+          top: 0
+          left: 0
+          width: 18px
+          height: 18px
+          background-image: url("./../icons/alarm.svg")

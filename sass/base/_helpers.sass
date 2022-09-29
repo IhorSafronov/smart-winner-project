@@ -1,0 +1,21 @@
+.container
+      position: relative
+      max-width: 1220px
+      // min-width: 375px
+      // border: 1px solid red
+      padding: 0 10px
+      margin: 0 auto
+.line
+      position: relative
+      &::before
+            content: ""
+            position: absolute
+            top: -2px
+            right: -25px
+            width: 2px
+            height: 24px
+            background-color: $color-white
+.btn
+      transition: all .3s
+      &:hover
+            transform: scale(1.1)

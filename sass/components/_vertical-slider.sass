@@ -1,0 +1,37 @@
+.vertical-slider
+  overflow: hidden
+  .slick-slider
+    height: 375px
+    @include respond (tab-land)
+      width: 600px
+  .slick-slide
+    display: flex
+    align-items: center
+    border: 1px solid #E0E0E0
+    border-radius: 8px
+    margin-bottom: 15px
+.item-image
+  margin: 10px 15px
+.text-date
+  font-family: "Roboto-Regular"
+  font-size: 14px
+  line-height: 21px
+.text-name
+  position: relative
+  font-family: "Roboto-Medium"
+  font-size: 14px
+  line-height: 21px
+  padding-left: 25px
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 20px
+    height: 14px
+    background-image: url("./../icons/country-germ.svg")
+.text-info
+  font-family: "Roboto-Regular"
+  font-size: 14px
+  line-height: 21px
+  color: #5F5F5F

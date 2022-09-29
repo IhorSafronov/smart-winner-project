@@ -1,0 +1,155 @@
+.lottery-winner
+  display: flex
+  justify-content: space-between
+  margin-bottom: 55px
+  @include respond (tab-land)
+    flex-direction: column
+  .lottery-biggest__winner
+    width: 775px
+    @include respond (tab-land)
+      width: 343px
+  .head__winner
+    width: 100%
+    height: 45px
+    background-color: $color-red
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 8px
+    margin-bottom: 15px
+    h2
+      font-family: "Roboto-Bold"
+      font-size: 18px
+      line-height: 24px
+      color: $color-white
+  .lottery-winner__card
+    width: 775px
+    border: 1px solid #E0E0E0
+    border-radius: 8px
+    @include respond (tab-land)
+      width: 343px
+    .card-head
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 20px 0 25px 0
+      p
+        font-family: "Roboto-Medium"
+        font-size: 28px
+        line-height: 36px
+        text-transform: uppercase
+        margin-left: 20px
+        @include respond (tab-land)
+          font-size: 27px
+      span
+        font-family: "Roboto-Bold"
+        font-size: 36px
+        line-height: 22px
+        color: $color-blue
+        margin-left: 10px
+        @include respond (tab-land)
+          font-size: 27px
+    .card-body
+      display: flex
+      margin-bottom: 20px
+      @include respond (tab-land)
+        flex-direction: column
+        align-items: center
+        row-gap: 16px
+      .card-body__image
+        img
+          margin: 0 15px 20px 0
+        .lotto-result
+          display: flex
+          align-items: center
+          justify-content: center
+          .result-text
+            font-family: "Roboto-Medium"
+            font-size: 14px
+            line-height: 120%
+            text-transform: uppercase
+            margin-right: 13px
+          .result-value
+            display: flex
+            column-gap: 4px
+            margin-bottom: 5px
+            .red-circle
+              width: 20px
+              height: 20px
+              border-radius: 50%
+              background-color: $color-red
+              display: flex
+              align-items: center
+              justify-content: center
+              font-family: "Roboto-Medium"
+              font-size: 12px
+              line-height: 120%
+              color: $color-white
+        .lotto-date
+          font-family: "Roboto-Regular"
+          font-size: 12px
+          line-height: 130%
+          color: #000000
+          text-align: right
+          padding-right: 100px
+          @include respond (tab-land)
+            padding-right: 70px
+      .card-body__text
+        width: 232px
+        h3
+          font-family: "Roboto-Medium"
+          font-size: 16px
+          line-height: 24px
+          margin-bottom: 15px
+        p
+          font-family: "Roboto-Regular"
+          font-size: 14px
+          line-height: 21px
+          margin-bottom: 31px
+        a
+          font-family: "Roboto-Medium"
+          font-size: 14px
+          line-height: 120%
+          text-decoration: underline
+          color: $color-blue
+          display: flex
+          justify-content: center
+          margin-bottom: 35px
+        .card-body__btn
+          font-family: "Roboto-Medium"
+          font-size: 14px
+          line-height: 130%
+          padding: 10px 86px 12px 86px
+          background-color: $btn-bgc-yellow
+          border-radius: 8px
+  .lottery-latest__winner
+    width: 380px
+    height: 435px
+    overflow: hidden
+    @include respond (tab-land)
+      width: 343px
+    .about-money
+      width: 380px
+      border: 1px solid #E0E0E0
+      border-radius: 8px
+      text-align: center
+      margin-bottom: 30px
+      .total-prizes__text
+        font-family: "Roboto-Regular"
+        font-size: 18px
+        line-height: 120%
+        margin: 5px 0
+      .total-prizes__value
+        font-family: "Roboto-Bold"
+        font-size: 26px
+        line-height: 22px
+        color: $color-green
+        margin-bottom: 5px
+      .count-tickets
+        font-family: "Roboto-Medium"
+        font-size: 26px
+        line-height: 120%
+        span
+          font-family: "Roboto-Regular"
+          font-size: 18px
+          line-height: 120%

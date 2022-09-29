@@ -1,0 +1,43 @@
+.popular-question
+  margin-bottom: 75px
+  @include respond(tab-land)
+    display: none
+  &__title
+    font-family: "Roboto-Medium"
+    font-size: 24px
+    line-height: 36px
+    text-transform: uppercase
+    margin-bottom: 33px
+.accordeon-list
+  width: 775px
+  &__item
+    position: relative
+    font-family: "Roboto-Medium"
+    font-size: 18px
+    line-height: 24px
+    color: $color-blue
+    margin-bottom: 25px
+    border-bottom: 1px solid #E0E0E0
+    &:last-child
+      margin-bottom: 0
+    &::after
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      width: 11px
+      height: 7px
+      background-image: url("./../icons/accordeon-arrow.svg")
+    .accordeon-sublist
+      display: none
+      .accordeon-sublist__item
+        font-family: "Roboto-Medium"
+        font-size: 16px
+        line-height: 20px
+        color: $color-black
+    .sub__can-play.show
+      display: block
+    .sub__how-will.show
+      display: block
+    .sub__save-play.show
+      display: block

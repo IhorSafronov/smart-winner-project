@@ -1,0 +1,22 @@
+.burger-navigation
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 5
+  transform: translateY(-100%)
+  transition: all .4s
+  max-width: 992px
+  width: 100%
+.active
+  transform: translateY(0)
+  .burger__wrapper
+    background-color: rgba($color-white, 0.8)
+    text-align: center
+    .burger-list__item
+      font-family: "Roboto-Bold"
+      font-size: 20px
+      line-height: 120%
+      margin-bottom: 10px
+      color: $color-red
+      &:last-child
+        margin-bottom: 0

@@ -1,0 +1,48 @@
+.menu-button
+  position: absolute
+  z-index: 10
+  top: 46px
+  left: 16px
+  width: $menu-button-width
+  height: $menu-button-height
+  display: none
+  @include respond(tab-land)
+    display: block
+  &.open
+    transform: rotateZ(45deg)
+    & .menu-bar
+      &__top
+        width: 100%
+        left: 100%
+        opacity: 0
+        animation: crossBar 0.4s ease forwards
+        animation-delay: 0.3s
+      &__bottom
+        width: 100%
+        left: -400%
+        opacity: 0
+  &__menu-bar
+    display: block
+    width: 100%
+    height: $menu-bar-height
+    position: absolute
+    left: 0
+    top: 0
+    background-color: $menu-bar-color
+    transition: all 0.3s linear
+.menu-bar
+  &__top,
+  &__bottom
+    display: block
+    position: absolute
+    left: 0
+    margin: 0 auto
+    top: -7px
+    width: 100%
+    height: $menu-bar-height
+    background-color: $menu-bar-color
+    opacity: 1
+    transition: all 0.3s linear
+  &__bottom
+    top: 7px
+    left: 0

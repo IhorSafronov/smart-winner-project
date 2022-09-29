@@ -1,0 +1,141 @@
+.footer
+  margin-bottom: 55px
+  .footer-wrapper
+    background-image: url("./../img/footer-bg-big.png")
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: top
+    width: 100%
+    height: 50vh
+    display: flex
+    @include respond (tab-land)
+      background-image: url("./../img/footer-bg-small.png")
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: top center
+      width: 100%
+      height: 30vh
+      flex-direction: column
+    .footer-wrapper_column-left
+      width: 215px
+      padding: 133px 160px 0 108px
+      @include respond (tab-land)
+        padding: 81px 0 0 15px
+      .footer__whatsapp-link
+        display: flex
+        align-items: center
+        margin-bottom: 36px
+        img
+          margin-right: 15px
+        p
+          font-family: "Roboto-Medium"
+          font-size: 16px
+          line-height: 21px
+          span
+            font-family: "Roboto-Regular"
+            font-size: 12px
+            line-height: 21px
+            color: #5F5F5F
+      .usefull-links
+        .usefull-links__list
+          @include respond (tab-land)
+            width: 350px
+            height: 170px
+            display: flex
+            flex-flow: column wrap
+            // flex-wrap: wrap
+          .item-home
+            display: none
+            @include respond (tab-land)
+              display: block
+        h3
+          font-family: "Roboto-Medium"
+          font-size: 16px
+          line-height: 21px
+          text-transform: uppercase
+          margin-bottom: 15px
+        ul li a
+          font-family: "Roboto-Regular"
+          font-size: 16px
+          line-height: 21px
+          color: $color-black
+          @include respond (tab-land)
+            font-size: 14px
+        .list-item
+          margin-bottom: 5px
+          &:last-child
+            margin-bottom: 0
+        .bold-item
+          a
+            font-family: "Roboto-Bold"
+            font-size: 16px
+            line-height: 21px
+    .footer-wrapper_column-center
+      width: 250px
+      padding-top: 211px
+      margin-right: 192px
+      @include respond (tab-land)
+        padding-top: 20px
+        width: 315px
+      h3
+        font-family: "Roboto-Medium"
+        font-size: 16px
+        line-height: 21px
+        text-transform: uppercase
+        margin-bottom: 15px
+        @include respond (tab-land)
+          font-size: 14px
+      p
+        font-family: "Roboto-Regular"
+        font-size: 12px
+        line-height: 120%
+        @include respond (tab-land)
+          font-size: 11px
+        span
+          display: block
+          margin-top: 5px
+          font-size: 13px
+          line-height: 21px
+          @include respond (tab-land)
+            font-size: 11px
+    .footer-wrapper_column-right
+      position: relative
+      padding-top: 136px
+      @include respond (tab-land)
+        display: flex
+        padding-top: 20px
+        column-gap: 34px
+      .footer-social__media
+        margin-bottom: 36px
+        @include respond (tab-land)
+          position: absolute
+          bottom: -30px
+          right: 25px
+        img
+          margin-right: 10px
+        &:last-child
+          margin-right: 0
+      .footer-payment
+        h3
+          font-family: "Roboto-Medium"
+          font-size: 16px
+          line-height: 21px
+          text-transform: uppercase
+          margin-bottom: 10px
+        .paiment-cards
+          display: flex
+          flex-wrap: wrap
+          gap: 10px
+          width: 155px
+          margin-bottom: 30px
+      .footer-security
+        h3
+          font-family: "Roboto-Medium"
+          font-size: 16px
+          line-height: 21px
+          text-transform: uppercase
+          margin-bottom: 12px
+        .security-image
+          display: flex
+          align-items: center
+          column-gap: 10px
